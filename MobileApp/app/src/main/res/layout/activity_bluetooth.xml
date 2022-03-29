@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:forceDarkAllowed="false"
+    android:gravity="center"
+    android:animateLayoutChanges="true"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_bluetooth" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Bluetooth Connectivity"
+        android:textColor="@color/text_color_heading"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/connection_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="Connect to our product via bluetooth"
+        android:textColor="@color/text_color_normal"
+        android:textSize="@dimen/text_size_heading" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/scan_results_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+
+        android:background="@drawable/background_white_round_edges"
+        tools:listitem="@layout/row_scan_result" />
+
+    <TextView
+        android:id="@+id/btn_bluetooth_scan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/btn_round_corners"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_medium"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:text="Scan"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="developers Only"
+        android:fontFamily="@font/roboto_medium_italic"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/test_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:fontFamily="@font/roboto_medium_italic"
+        android:gravity="center"
+        android:text="Bluetooth"
+        android:textColor="@color/colorPrimary" />
+</LinearLayout>

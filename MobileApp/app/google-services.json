@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "798247703820",
+    "project_id": "feetwings-2fe11",
+    "storage_bucket": "feetwings-2fe11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798247703820:android:747aea3b8017804bbe2529",
+        "android_client_info": {
+          "package_name": "com.example.feetwings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798247703820-kjj2lof8944ugpdsl93hdf1g1agv40tn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.feetwings",
+            "certificate_hash": "81e47a74dacca9fbad6054af98ecff1b5cc21d8c"
+          }
+        },
+        {
+          "client_id": "798247703820-p53ajm9ovib7lj4t7ncm5qjnn9sgktas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjT-52d4tYO3TClPhhqEfGJGVR81ItQN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798247703820-p53ajm9ovib7lj4t7ncm5qjnn9sgktas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

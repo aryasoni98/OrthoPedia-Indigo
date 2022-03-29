@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_content_padding_progress_dialog">10dp</dimen>
+    <dimen name="progress_bar_size">50dp</dimen>
+    <dimen name="progress_bar_marginEnd">10dp</dimen>
+    <dimen name="progress_bar_text_size">16sp</dimen>
+    <dimen name="main_screen_content_padding">16dp</dimen>
+    <dimen name="card_view_marginStartEnd">5dp</dimen>
+    <dimen name="card_view_marginTop">16dp</dimen>
+    <dimen name="card_view_corner_radius">10dp</dimen>
+    <dimen name="card_view_elevation">5dp</dimen>
+    <dimen name="card_view_content_padding">10dp</dimen>
+    <dimen name="identification_image_size">25dp</dimen>
+    <dimen name="identification_image_marginEnd">10dp</dimen>
+    <dimen name="label_text_size">16sp</dimen>
+    <dimen name="value_text_size">16sp</dimen>
+    <dimen name="sunset_marginStart">10dp</dimen>
+    <dimen name="sunrise_marginTop">10dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="divider_margin">16dp</dimen>
+
+    <dimen name="material_card_view_elevation">24dp</dimen>
+    <dimen name="material_card_view_corner_radius">10dp</dimen>
+    <dimen name="material_card_view_card_elevation">10dp</dimen>
+
+    <dimen name="text_size_heading">20sp</dimen>
+    <dimen name="text_size_normal">15sp</dimen>
+
+
+    <dimen name="text_size_date">15sp</dimen>
+    <dimen name="text_size_day_of_the_week">10sp</dimen>
+    <dimen name="date_status_active_text_size">20sp</dimen>
+
+    <dimen name="date_status_height_width">12dp</dimen>
+    <dimen name="date_status_margin_top">2dp</dimen>
+    <dimen name="date_status_active_margin_top">10dp</dimen>
+    <dimen name="day_margin_top">2dp</dimen>
+    <dimen name="linear_layout_date_status_padding">5dp</dimen>
+    <dimen name="linear_layout_date_status_layout_width">25dp</dimen>
+    <dimen name="linear_layout_date_status_margin_top_bottom">2dp</dimen>
+    <dimen name="linear_layout_date_status_margin_start_end">10dp</dimen>
+
+
+    <dimen name="height_of_nav_main">180dp</dimen>
+    <dimen name="nav_image_size">80dp</dimen>
+    <dimen name="nav_content_margin_StartEnd">16dp</dimen>
+    <dimen name="nav_content_margin_top">5dp</dimen>
+    <dimen name="nav_content_margin_bottom">10dp</dimen>
+    <dimen name="nav_user_name_text_size">18sp</dimen>
+    <dimen name="nav_image_circular_border_width">1dp</dimen>
+    <dimen name="nav_divider_height">0.5dp</dimen>
+
+    <dimen name="card_view_subscription_color_height">100dp</dimen>
+    <dimen name="card_view_subscription_white_height">190dp</dimen>
+</resources>

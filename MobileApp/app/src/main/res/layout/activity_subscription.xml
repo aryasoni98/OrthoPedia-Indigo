@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:forceDarkAllowed="true"
+    android:orientation="vertical"
+    tools:context=".activity.SubscriptionActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_subscription_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="@dimen/material_card_view_elevation"
+                app:cardCornerRadius="@dimen/material_card_view_corner_radius"
+                app:cardElevation="@dimen/material_card_view_card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/card_view_subscription_color_height"
+                        android:background="@drawable/background_subscription_basic_plan"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:gravity="center"
+                            android:text="Basic Plan"
+                            android:textColor="@color/white"
+                            android:textSize="32sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center"
+                            android:text="Starts at ₹199/month"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/card_view_subscription_white_height"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="30dp"
+                                android:src="@drawable/ic_text_bullet" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="User's daily analytics and data sharing"
+                                android:textColor="@color/text_color_normal"
+                                android:textSize="@dimen/text_size_normal" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/btn_round_corners_yellow"
+                            android:clickable="true"
+                            android:elevation="10dp"
+                            android:focusable="true"
+                            android:fontFamily="@font/roboto_medium"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:text="Explore Basic"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="@dimen/material_card_view_elevation"
+                app:cardCornerRadius="@dimen/material_card_view_corner_radius"
+                app:cardElevation="@dimen/material_card_view_card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/card_view_subscription_color_height"
+                        android:background="@drawable/background_subscription_smart_plan"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:gravity="center"
+                            android:text="Smart Plan"
+                            android:textColor="@color/white"
+                            android:textSize="32sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center"
+                            android:text="Starts at ₹199/month"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/card_view_subscription_white_height"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="30dp"
+                                android:src="@drawable/ic_text_bullet" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="AI trainer and Calorie tracker for the user"
+                                android:textColor="@color/text_color_normal"
+                                android:textSize="@dimen/text_size_normal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="30dp"
+                                android:src="@drawable/ic_text_bullet" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="User's daily analytics and data sharing"
+                                android:textColor="@color/text_color_normal"
+                                android:textSize="@dimen/text_size_normal" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/btn_round_corners_yellow"
+                            android:clickable="true"
+                            android:elevation="10dp"
+                            android:focusable="true"
+                            android:fontFamily="@font/roboto_medium"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:text="Explore Basic"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="@dimen/material_card_view_elevation"
+                app:cardCornerRadius="@dimen/material_card_view_corner_radius"
+                app:cardElevation="@dimen/material_card_view_card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/card_view_subscription_color_height"
+                        android:background="@drawable/background_subscription_third_plan"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:gravity="center"
+                            android:text="TBD Plan"
+                            android:textColor="@color/white"
+                            android:textSize="32sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center"
+                            android:text="Starts at ₹199/month"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/card_view_subscription_white_height"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="30dp"
+                                android:src="@drawable/ic_text_bullet" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Personalized Dietician for the user"
+                                android:textColor="@color/text_color_normal"
+                                android:textSize="@dimen/text_size_normal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="30dp"
+                                android:src="@drawable/ic_text_bullet" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="AI trainer and Calorie tracker for the user"
+                                android:textColor="@color/text_color_normal"
+                                android:textSize="@dimen/text_size_normal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="30dp"
+                                android:src="@drawable/ic_text_bullet" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="User's daily analytics and data sharing"
+                                android:textColor="@color/text_color_normal"
+                                android:textSize="@dimen/text_size_normal" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/btn_round_corners_yellow"
+                            android:clickable="true"
+                            android:elevation="10dp"
+                            android:focusable="true"
+                            android:fontFamily="@font/roboto_medium"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:text="Explore Basic"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

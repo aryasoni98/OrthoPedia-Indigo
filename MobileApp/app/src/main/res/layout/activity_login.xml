@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:forceDarkAllowed="false"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".activity.LoginActivity">
+
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_google" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Log In"
+        android:textColor="@color/text_color_heading"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/text_color_normal"
+        android:gravity="center"
+        android:text="Login with your Google account"
+        android:textSize="@dimen/text_size_heading" />
+
+    <LinearLayout
+        android:id="@+id/ll_btn_signIn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/btn_round_corners"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_google" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="45dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="Log In With Google"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_heading"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

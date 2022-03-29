@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    android:forceDarkAllowed="false"
+    tools:viewBindingIgnore="false"
+    android:animateLayoutChanges="true"
+    tools:context=".activity.IntroductionActivity">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_logoScreen"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/tv_introduction_logo"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:src="@drawable/logo_feetwings"
+            app:layout_constraintVertical_bias="0.1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Indigo"
+            android:textColor="@color/text_color_blue"
+            android:fontFamily="@font/heading_app_font"
+            android:textStyle="bold"
+            android:textSize="60sp"
+            app:layout_constraintVertical_bias="0.2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_introduction_logo"
+            tools:layout_editor_absoluteX="40dp" />
+    <!--    TODO: change the text here-->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="catchphrase of the company"
+            android:textColor="@color/text_color_normal"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:fontFamily="@font/roboto_medium_italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.95"
+            tools:layout_editor_absoluteX="40dp" />
+
+        <TextView
+            android:id="@+id/btn_getStarted"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_round_corners"
+            android:text="Get Started"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_foot_temperature_and_pressure_monitoring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/foot_temperature_and_pressure" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:text="@string/foot_temperature_amp_pressure_monitoring"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_light_italic"
+            android:text="@string/foot_temperature_amp_pressure_monitoring_description"
+            android:textColor="#757575"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_algorithm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/algorithm" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:text="@string/algorithms_that_grow_with_you"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_light_italic"
+            android:text="@string/algorithms_that_grow_with_you_description"
+            android:textColor="#757575"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/btn_next"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_round_corners"
+        android:text="Next"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:visibility="gone"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+    <TextView
+        android:id="@+id/btn_login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_round_corners"
+        android:text="@string/login_with_google_account"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:visibility="gone"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
